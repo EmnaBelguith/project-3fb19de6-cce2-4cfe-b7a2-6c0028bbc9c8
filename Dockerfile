@@ -2,7 +2,7 @@ FROM python:3.7-slim-buster as builder
 
 WORKDIR /app
 
-COPY requirements.txt ./
+COPY python_project/requirements.txt ./
 RUN pip install -r requirements.txt
 
 COPY . ./
